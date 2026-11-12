@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insider cluster alarms | MEERKAT</title>
+  <meta name="description" content="Every case in the last 90 days where three or more insiders of one company traded the same way inside 14 days, scored and linked to the SEC filings.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MEERKAT">
+  <meta property="og:title" content="Insider cluster alarms | MEERKAT">
+  <meta property="og:description" content="Every case in the last 90 days where three or more insiders of one company traded the same way inside 14 days, scored and linked to the SEC filings.">
+  <meta property="og:url" content="https://meerkatrobin.com/alarms.html">
+  <meta property="og:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insider cluster alarms | MEERKAT">
+  <meta name="twitter:description" content="Every case in the last 90 days where three or more insiders of one company traded the same way inside 14 days, scored and linked to the SEC filings.">
+  <meta name="twitter:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="page-alarms">
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./"><img src="logo.png" alt="" width="36" height="36"><span>MEERKAT</span></a>
+      <nav>
+        <a href="./">The watch</a>
+        <a href="alarms.html" aria-current="page">Alarms</a>
+        <a href="burrows.html">Burrows</a>
+        <a href="patch.html">Your patch</a>
+        <a href="how.html">How it scores</a>
+        <a href="token.html">$MEERKAT</a>
+      </nav>
+      <div class="top-ca" id="top-ca"></div>
+    </div>
+  </header>
+  <main>
+  <div class="wrap">
+    <section>
+      <p class="kicker">Last 90 days</p>
+      <h1 class="page-title">Alarms</h1>
+      <p class="lede" id="alarms-note">Three or more insiders of one company, trading the same way inside 14 days.</p>
+      <div class="pills" id="alarm-filters"></div>
+      <div class="alarms" id="alarm-list"><p class="muted">Watching…</p></div>
+      <p class="fine">"Planned" marks trades made under a 10b5-1 plan, set up months earlier. They count for less in the score. Sells often bunch up after earnings, because that is when insiders are allowed to trade.</p>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-links" id="foot-links"></div>
+      <p>MEERKAT is not affiliated with Robinhood, Pons, the SEC, or any company shown. Data: SEC EDGAR, the Robinhood stock token registry and Robinhood Chain. Nothing here is investment advice.</p>
+    </div>
+  </footer>
+  <script src="config.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

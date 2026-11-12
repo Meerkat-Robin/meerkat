@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How the alarm is scored | MEERKAT</title>
+  <meta name="description" content="What counts as an insider cluster, where the data comes from and how MEERKAT turns a cluster into a score from 30 to 100.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MEERKAT">
+  <meta property="og:title" content="How the alarm is scored | MEERKAT">
+  <meta property="og:description" content="What counts as an insider cluster, where the data comes from and how MEERKAT turns a cluster into a score from 30 to 100.">
+  <meta property="og:url" content="https://meerkatrobin.com/how.html">
+  <meta property="og:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How the alarm is scored | MEERKAT">
+  <meta name="twitter:description" content="What counts as an insider cluster, where the data comes from and how MEERKAT turns a cluster into a score from 30 to 100.">
+  <meta name="twitter:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="page-how">
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./"><img src="logo.png" alt="" width="36" height="36"><span>MEERKAT</span></a>
+      <nav>
+        <a href="./">The watch</a>
+        <a href="alarms.html">Alarms</a>
+        <a href="burrows.html">Burrows</a>
+        <a href="patch.html">Your patch</a>
+        <a href="how.html" aria-current="page">How it scores</a>
+        <a href="token.html">$MEERKAT</a>
+      </nav>
+      <div class="top-ca" id="top-ca"></div>
+    </div>
+  </header>
+  <main>
+  <div class="wrap">
+    <section>
+      <p class="kicker">No black box</p>
+      <h1 class="page-title">How it scores</h1>
+      <p class="lede">An alarm is three or more different insiders of one company, trading the same way, inside 14 days. The score says how loud it is.</p>
+      <table class="rules">
+        <thead><tr><th>Rule</th><th>Points</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Heads</td><td>30 to 54</td><td>30 for three insiders, 8 more for each extra one, up to six.</td></tr>
+          <tr><td>Not planned</td><td>0 to 20</td><td>The share of insiders who traded outside a 10b5-1 plan. A planned sale was decided months ago.</td></tr>
+          <tr><td>Top brass</td><td>10</td><td>A CEO, CFO, president or chair is among them.</td></tr>
+          <tr><td>Tight</td><td>4 or 8</td><td>All trades inside nine days give 4, inside five days give 8.</td></tr>
+          <tr><td>Buying</td><td>8</td><td>Insiders sell for many reasons. They buy for one.</td></tr>
+        </tbody>
+      </table>
+      <p class="fine">80 and up: the whole mob is up. 60 to 79: standing tall. Below 60: heads up.</p>
+    </section>
+
+    <section>
+      <div class="head"><h2>Where the data comes from</h2></div>
+      <ul class="facts">
+        <li><span>Trades</span>SEC Form 4, read from EDGAR. Only open-market buys and sells over $10K. Grants, option exercises, tax withholding and gifts are left out.</li>
+        <li><span>Tokens</span>Robinhood's stock token registry on Robinhood Chain (chain 4663). A company without a token is not watched.</li>
+        <li><span>Wallets</span>Balances are read live from Robinhood Chain when you press Look.</li>
+        <li><span>Refresh</span>Filings are read once a day. A Form 4 is due within two business days of the trade.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="head"><h2>What comes next</h2></div>
+      <ol class="plan">
+        <li class="now"><span>Now</span><h3>Watching</h3><p>Alarms, burrows, the wallet check.</p></li>
+        <li><span>Next</span><h3>Calling</h3><p>Telegram alerts the moment a cluster forms on a token you hold.</p></li>
+        <li><span>Later</span><h3>Keeping score</h3><p>What the stock did after each past alarm, so the rules can be judged.</p></li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details><summary>Do I need $MEERKAT to use the site?</summary><p>No. Everything on it is free and needs no account.</p></details>
+        <details><summary>Why are most alarms sells?</summary><p>Insiders are paid in stock and sell it all the time. Several buying at once is rare, which is why it gets extra points.</p></details>
+        <details><summary>Does an alarm mean the stock will move?</summary><p>No. It means several people who know the company acted the same way at the same time. That is a fact from the filings, not a forecast.</p></details>
+        <details><summary>Who can buy stock tokens?</summary><p>Stock tokens are issued by Robinhood Assets (Jersey) Limited. They are not available to US persons or in several other places, including the UK and Canada.</p></details>
+        <details><summary>Is this investment advice?</summary><p>No. MEERKAT shows what public filings say. Following insiders can lose money.</p></details>
+      </div>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-links" id="foot-links"></div>
+      <p>MEERKAT is not affiliated with Robinhood, Pons, the SEC, or any company shown. Data: SEC EDGAR, the Robinhood stock token registry and Robinhood Chain. Nothing here is investment advice.</p>
+    </div>
+  </footer>
+  <script src="config.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

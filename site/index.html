@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEERKAT: when three insiders move at once, the mob stands up</title>
+  <meta name="description" content="MEERKAT reads SEC Form 4 filings and raises an alarm when three or more insiders of one company trade the same way inside 14 days. Only stocks with a token on Robinhood Chain.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MEERKAT">
+  <meta property="og:title" content="MEERKAT: when three insiders move at once, the mob stands up">
+  <meta property="og:description" content="MEERKAT reads SEC Form 4 filings and raises an alarm when three or more insiders of one company trade the same way inside 14 days. Only stocks with a token on Robinhood Chain.">
+  <meta property="og:url" content="https://meerkatrobin.com/">
+  <meta property="og:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MEERKAT: when three insiders move at once, the mob stands up">
+  <meta name="twitter:description" content="MEERKAT reads SEC Form 4 filings and raises an alarm when three or more insiders of one company trade the same way inside 14 days. Only stocks with a token on Robinhood Chain.">
+  <meta name="twitter:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="page-index">
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./"><img src="logo.png" alt="" width="36" height="36"><span>MEERKAT</span></a>
+      <nav>
+        <a href="./" aria-current="page">The watch</a>
+        <a href="alarms.html">Alarms</a>
+        <a href="burrows.html">Burrows</a>
+        <a href="patch.html">Your patch</a>
+        <a href="how.html">How it scores</a>
+        <a href="token.html">$MEERKAT</a>
+      </nav>
+      <div class="top-ca" id="top-ca"></div>
+    </div>
+  </header>
+  <main>
+  <section class="dusk">
+    <div class="wrap dusk-text">
+      <p class="kicker">SEC Form 4 &rarr; stock tokens on Robinhood Chain</p>
+      <h1>One insider is noise.<br><em>Three is an alarm.</em></h1>
+      <p class="lede">Nobody reads insider filings. The meerkats do, all day. When three or more insiders of one company buy or sell inside 14 days, one of them stands up.</p>
+      <div class="cta">
+        <a class="btn solid" href="alarms.html">See every alarm</a>
+        <a class="btn" href="patch.html">Check your wallet</a>
+      </div>
+    </div>
+    <div class="dune-scroll"><div id="dune" class="dune"></div></div>
+  </section>
+
+  <div class="wrap">
+    <section class="stats" id="stats"></section>
+
+    <section>
+      <div class="head"><h2>Standing right now</h2><p class="muted" id="updated"></p></div>
+      <div class="alarms" id="top-alarms"><p class="muted">Watching…</p></div>
+      <p class="more"><a href="alarms.html">All alarms from the last 90 days &rarr;</a></p>
+    </section>
+
+    <section class="trio">
+      <a href="burrows.html"><h3>Burrows</h3><p>Every company with a stock token, and how many of its insiders traded lately.</p></a>
+      <a href="patch.html"><h3>Your patch</h3><p>Paste a wallet. See which of your stock tokens have insiders moving together.</p></a>
+      <a href="how.html"><h3>How it scores</h3><p>Five plain rules turn a cluster into a number from 30 to 100.</p></a>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-links" id="foot-links"></div>
+      <p>MEERKAT is not affiliated with Robinhood, Pons, the SEC, or any company shown. Data: SEC EDGAR, the Robinhood stock token registry and Robinhood Chain. Nothing here is investment advice.</p>
+    </div>
+  </footer>
+  <script src="config.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

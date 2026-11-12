@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your patch: alarms on the stock tokens you hold | MEERKAT</title>
+  <meta name="description" content="Paste a Robinhood Chain address and see which of its stock tokens have insiders buying or selling together. Read-only, nothing to sign.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MEERKAT">
+  <meta property="og:title" content="Your patch: alarms on the stock tokens you hold | MEERKAT">
+  <meta property="og:description" content="Paste a Robinhood Chain address and see which of its stock tokens have insiders buying or selling together. Read-only, nothing to sign.">
+  <meta property="og:url" content="https://meerkatrobin.com/patch.html">
+  <meta property="og:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your patch: alarms on the stock tokens you hold | MEERKAT">
+  <meta name="twitter:description" content="Paste a Robinhood Chain address and see which of its stock tokens have insiders buying or selling together. Read-only, nothing to sign.">
+  <meta name="twitter:image" content="https://meerkatrobin.com/og-image.png?v=1">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="page-patch">
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./"><img src="logo.png" alt="" width="36" height="36"><span>MEERKAT</span></a>
+      <nav>
+        <a href="./">The watch</a>
+        <a href="alarms.html">Alarms</a>
+        <a href="burrows.html">Burrows</a>
+        <a href="patch.html" aria-current="page">Your patch</a>
+        <a href="how.html">How it scores</a>
+        <a href="token.html">$MEERKAT</a>
+      </nav>
+      <div class="top-ca" id="top-ca"></div>
+    </div>
+  </header>
+  <main>
+  <div class="wrap">
+    <section>
+      <p class="kicker">Read-only, nothing to sign</p>
+      <h1 class="page-title">Your patch</h1>
+      <p class="lede">Paste a Robinhood Chain address. The meerkats look at the stock tokens in it and tell you where insiders are moving together.</p>
+      <form class="lookup" id="patch-form">
+        <input id="address" placeholder="0x… wallet address" autocomplete="off" spellcheck="false">
+        <button class="btn solid" type="submit">Look</button>
+        <button class="btn" type="button" id="connect">Use my wallet</button>
+      </form>
+      <div id="patch-result"></div>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-links" id="foot-links"></div>
+      <p>MEERKAT is not affiliated with Robinhood, Pons, the SEC, or any company shown. Data: SEC EDGAR, the Robinhood stock token registry and Robinhood Chain. Nothing here is investment advice.</p>
+    </div>
+  </footer>
+  <script src="config.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

@@ -66,6 +66,16 @@ npx wrangler deploy
 
 MEERKAT shows what public filings say. An alarm is not a forecast and not investment advice. Stock tokens are issued by Robinhood Assets (Jersey) Limited and are not available to US persons or in several other places. MEERKAT is not affiliated with Robinhood, Pons, the SEC, or any company shown.
 
+## Token
+
+$MEERKAT is live on Pons, Robinhood Chain (chain 4663).
+
+```
+0x8857d36b6d078fe96c5dea25c1dff96f8d23d7b0
+```
+
+The same address is shown on [meerkatrobin.com/token](https://meerkatrobin.com/token) and in the launch post on [x.com/meerkatrobin](https://x.com/meerkatrobin). If the three do not match, it is not ours. The site stays free and needs no token.
+
 ## License
 
 MIT

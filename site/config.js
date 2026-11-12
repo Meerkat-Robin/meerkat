@@ -3,7 +3,7 @@ window.MEERKAT_CONFIG = {
   name: 'MEERKAT',
   ticker: 'MEERKAT',
   // Paste the token contract address after launching on Pons. Empty = "launching soon".
-  tokenAddress: '',
+  tokenAddress: '0x8857d36b6d078fe96c5dea25c1dff96f8d23d7b0',
   // Leave a link empty to hide its button. The Pons link is built from the address when empty.
   links: {
     x: 'https://x.com/meerkatrobin',

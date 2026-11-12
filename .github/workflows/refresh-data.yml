@@ -1,0 +1,32 @@
+# Reads new Form 4 filings and commits the rebuilt data.
+# The site serves site/data from this branch, so it stays current without a redeploy.
+name: Refresh data
+
+on:
+  schedule:
+    - cron: '30 11 * * *' # daily, before the US market opens
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Read filings
+        env:
+          # SEC requires a contact in the User-Agent, e.g. "Meerkat filings watcher you@example.com"
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: node scripts/fetch.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "meerkat-bot"
+          git config user.email "meerkat-bot@users.noreply.github.com"
+          git add site/data
+          git diff --cached --quiet || git commit -m "Refresh data"
+          git push
